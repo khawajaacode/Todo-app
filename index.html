@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Master - Todo List App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="app">
+            <!-- App Header -->
+            <div class="app-header">
+                <div class="header-content">
+                    <h1>
+                        <img src="assets/icons/calendar.svg" alt="Calendar" class="icon">
+                        Task Master
+                    </h1>
+                    <button id="theme-toggle" class="theme-toggle">
+                        <span class="theme-icon">🌙</span>
+                    </button>
+                </div>
+                <p>Organize your tasks efficiently</p>
+                
+                <!-- Progress Bar -->
+                <div class="progress-container">
+                    <div class="progress-label">
+                        <span>Progress</span>
+                        <span id="progress-percentage">0%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div id="progress-fill" class="progress-fill" style="width: 0%;"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Task Input Form -->
+            <div class="task-form">
+                <form id="todo-form">
+                    <div class="input-group">
+                        <input type="text" id="task-input" placeholder="Add a new task..." autocomplete="off">
+                        <button type="submit" id="submit-btn">
+                            <img src="assets/icons/add.svg" alt="Add" class="icon">
+                            Add
+                        </button>
+                    </div>
+                    <div id="error-message" class="error-message hidden">Please enter a task description</div>
+                </form>
+            </div>
+            
+            <!-- Search Box -->
+            <div class="search-container">
+                <input type="text" id="search-input" placeholder="Search tasks..." autocomplete="off">
+            </div>
+
+            <!-- Filter Tabs -->
+            <div class="filter-tabs">
+                <button id="filter-all" class="active">All</button>
+                <button id="filter-active">Active</button>
+                <button id="filter-completed">Completed</button>
+            </div>
+
+            <!-- Task List -->
+            <div class="task-list-container">
+                <ul id="task-list">
+                    <!-- Tasks will be added here dynamically -->
+                </ul>
+                <div id="empty-state" class="empty-state hidden">
+                    <img src="assets/icons/file.svg" alt="Empty file" class="icon">
+                    <p id="empty-state-message">Your task list is empty - add tasks to get started</p>
+                </div>
+            </div>
+
+            <!-- App Footer -->
+            <div class="app-footer">
+                <span id="items-left">0 items left</span>
+                <button id="clear-completed" class="hidden">Clear completed</button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
