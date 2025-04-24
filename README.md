@@ -1,24 +1,27 @@
+# Todo-App
 
-# Task Master - Todo List Application
+The **To-Do App** is a simple yet powerful task management application designed to help users organize their daily activities. With its modern design and interactive features, it enhances productivity and ensures a seamless user experience.
 
-A modern and responsive todo list application with dark/light theme support and advanced task management features.
+## **Live Demo**
+Check out the live version here: [Todo-App Live](https://khawajaacode.github.io/Todo-app/)
 
-## Features
+## **Features**
+- Add, edit, and delete tasks.
+- Mark tasks as completed.
+- Light and dark mode support for a modern feel.
+- Responsive design for all devices.
 
-- Add, delete, and mark tasks as complete
-- Search functionality for tasks
-- Filter tasks by status (All, Active, Completed)
-- Progress tracking with visual progress bar
-- Dark/Light theme toggle
-- Responsive design
-- Local storage persistence
+## **Technologies Used**
+- HTML
+- CSS
+- JavaScript
 
-## Tech Stack
+## **Getting Started**
+To run the project locally, follow these steps:
 
-- HTML5
-- CSS3
-- JavaScript (Vanilla)
-
-## License
-
-MIT
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/khawajaacode/Todo-app.git
+2. Navigate to the project directory:
+   ```bash
+      cd Todo-app
